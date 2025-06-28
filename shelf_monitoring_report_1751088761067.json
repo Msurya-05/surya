@@ -1,0 +1,107 @@
+{
+  "timestamp": "2025-06-28T05:32:41.067Z",
+  "store_id": "STORE-001",
+  "metrics": {
+    "totalShelves": 6,
+    "normalStock": 3,
+    "lowStock": 2,
+    "emptyStock": 1,
+    "averageConfidence": 0.9183333333333334,
+    "lastScanTime": "30 seconds ago",
+    "systemUptime": "2 days, 14 hours"
+  },
+  "shelves": [
+    {
+      "id": "shelf-1",
+      "name": "Aisle 1 - Top Shelf",
+      "product": "Coca Cola 12oz",
+      "sku": "CC-001",
+      "current_stock": 3,
+      "min_stock": 5,
+      "max_stock": 20,
+      "status": "low",
+      "confidence": 0.94,
+      "last_updated": "2 min ago"
+    },
+    {
+      "id": "shelf-2",
+      "name": "Aisle 1 - Middle Shelf",
+      "product": "Lay's Chips Original",
+      "sku": "LC-002",
+      "current_stock": 15,
+      "min_stock": 8,
+      "max_stock": 25,
+      "status": "normal",
+      "confidence": 0.91,
+      "last_updated": "1 min ago"
+    },
+    {
+      "id": "shelf-3",
+      "name": "Aisle 1 - Bottom Shelf",
+      "product": "Wonder Bread",
+      "sku": "WB-003",
+      "current_stock": 0,
+      "min_stock": 3,
+      "max_stock": 12,
+      "status": "empty",
+      "confidence": 0.97,
+      "last_updated": "3 min ago"
+    },
+    {
+      "id": "shelf-4",
+      "name": "Aisle 2 - Top Shelf",
+      "product": "Milk 1 Gallon",
+      "sku": "MK-004",
+      "current_stock": 8,
+      "min_stock": 4,
+      "max_stock": 15,
+      "status": "normal",
+      "confidence": 0.89,
+      "last_updated": "1 min ago"
+    },
+    {
+      "id": "shelf-5",
+      "name": "Aisle 2 - Middle Shelf",
+      "product": "Tide Detergent",
+      "sku": "TD-005",
+      "current_stock": 1,
+      "min_stock": 2,
+      "max_stock": 8,
+      "status": "low",
+      "confidence": 0.92,
+      "last_updated": "4 min ago"
+    },
+    {
+      "id": "shelf-6",
+      "name": "Aisle 3 - Produce Section",
+      "product": "Bananas",
+      "sku": "BN-006",
+      "current_stock": 25,
+      "min_stock": 10,
+      "max_stock": 30,
+      "status": "normal",
+      "confidence": 0.88,
+      "last_updated": "2 min ago"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "1",
+      "type": "empty",
+      "message": "Wonder Bread shelf is completely empty",
+      "timestamp": "3 min ago",
+      "shelfId": "shelf-3",
+      "severity": "high",
+      "acknowledged": false
+    },
+    {
+      "id": "2",
+      "type": "low_stock",
+      "message": "Coca Cola stock below minimum threshold (3/5)",
+      "timestamp": "5 min ago",
+      "shelfId": "shelf-1",
+      "severity": "medium",
+      "acknowledged": false
+    }
+  ]
+}
