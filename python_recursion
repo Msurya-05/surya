@@ -11,10 +11,10 @@ def player_B(n):
     if n<=0:
         print("Player B reached !! Player B loses")
         return
-    print(f" \n Player B's turn. Current number (n)")
+    print(f" \n Player B's turn. Current number {n}")
     move= int(input("Player B, subtract 1 or 2;"))
     while move not in [1,2]:
         move= int(input("Player B, subtract 1 or 2:"))
-    player A(n-move)
+    player_A(n-move)
 start=int(input("Enter starting number:"))
 player_A(start)
