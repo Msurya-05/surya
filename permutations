@@ -1,0 +1,24 @@
+permute (abc, bucket='')
+for i in range(len(abc))
+ns=s[:i]+s[i+1]
+A "bc" i = 0
+B "ac" i = 1
+i = 2 C "ab"
+permute (bc, bucket='a')
+i = 0 B "c"
+c "b" i = 1
+permute(c, bucket='ab')
+permute(b, bucket=ac)
+C i = 0
+i = 0 b new
+permute("", bucket='abc')
+permute("", bucket='acb')
+permute(" abc", bucket='')
+ns=s[i]+s[i+1:]
+permute(" ac", bucket='b')
+A "c" i = 0
+i=1 c "a"
+permute(" c", bucket='ba')
+permute("a", bucket='bc')
+permute("", bucket='bac')
+permute("", bucket='bca')
